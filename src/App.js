@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import ProductList from './Components/ProductList';
 import Footer from './Components/Footer';
+import Slide from './Components/Slide'
 
 function App() {
   const productList = [
@@ -26,6 +27,7 @@ function App() {
   return (
    <>
    <Navbar/>
+   <Slide/>
    <main className='container mt-5 text-left'>
    <ProductList productList={productList}/>
    </main>
