@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import ProductList from './Components/ProductList';
 import Footer from './Components/Footer';
 import Slide from './Components/Slide'
+import React,{useState} from 'react';
 
 function App() {
   const productList = [
@@ -21,15 +22,20 @@ function App() {
       name: "IPhone 12 Pro",
       price: 66000,
       quantity: 0,
-    },
-
+    }
   ]
+  let [ProductList, setProductList] = useState(productList) 
+  const incrementQuantity = (index) => {
+    let newProductList = [...productList]
+    newProductList[index].quantity++
+    setProductList(newProductList);
+  }
   return (
    <>
    <Navbar/>
    <Slide/>
    <main className='container mt-5 text-left'>
-   <ProductList productList={productList}/>
+   <ProductList productList={productList} incrementQuantity={incrementQuantity}/>
    </main>
    </>
   );
