@@ -4,9 +4,9 @@ export default function Product(props) {
   return (
     <div className="row">
       <div className="col-5">
-        <h4>
+        <h4 className="container">
           {props.product.name} &nbsp; &nbsp;
-          <span class="badge text-bg-primary">₹{props.product.price}</span>
+          <span className="badge text-bg-primary">₹{props.product.price}</span>
         </h4>
       </div>
 
@@ -35,6 +35,7 @@ export default function Product(props) {
       <div className="col-4">
         {props.product.quantity * props.product.price}
       </div>
+     
     </div>
   );
 }
