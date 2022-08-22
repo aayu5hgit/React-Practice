@@ -37,9 +37,18 @@
   border: 1px solid #ffffff;
 }
 
-.col-2{
-  box-shadow: 2px 2px 2px #d2d2d2;
-  border: 2px solid rgb(54, 134, 254);
-  text-align: left;
+.col-4{
+  text-align: right;
   border-radius: 5px;
+  margin-top: 1.5rem;
+
+}
+
+.container{
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.btn-group{
+  margin: 1.5rem 1.5rem 1.5rem 0;
+
 }

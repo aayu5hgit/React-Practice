@@ -17,7 +17,7 @@ function App() {
       quantity: 0,
     },
     {
-      name: "IPhone 12 Pro",
+      name: "IPhone 13",
       price: 66000,
       quantity: 0,
     },
@@ -37,7 +37,7 @@ function App() {
     <>
       <Navbar />
       <Slide />
-      <main className="container mt-5 text-left">
+      <main className="container text-left">
         <ProductList
           productList={productList}
           incrementQuantity={incrementQuantity}
