@@ -37,8 +37,9 @@
   border: 1px solid #ffffff;
 }
 
-.col-1{
+.col-2{
   box-shadow: 2px 2px 2px #d2d2d2;
   border: 2px solid rgb(54, 134, 254);
-  text-align: center;
+  text-align: left;
+  border-radius: 5px;
 }
