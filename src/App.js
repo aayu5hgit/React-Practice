@@ -7,6 +7,11 @@ import Slide from "./Components/Slide.js";
 function App() {
   const products = [
     {
+      name: "IPhone X",
+      price: 32000,
+      quantity: 0,
+    },
+    {
       name: "IPhone 11",
       price: 49999,
       quantity: 0,
@@ -21,6 +26,8 @@ function App() {
       price: 66000,
       quantity: 0,
     },
+    
+    
   ];
   let [productList, setProductList] = useState(products);
   const incrementQuantity = (index) => {
